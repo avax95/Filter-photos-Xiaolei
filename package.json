@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack -d --watch",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,15 +17,14 @@
     "url": "https://github.com/avax95/Filter-rooms-Xiaolei/issues"
   },
   "homepage": "https://github.com/avax95/Filter-rooms-Xiaolei#readme",
-  "scripts": {
-    "dev": "webpack -d --watch",
-    "start": "node server/index.js"
-  },
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "faker": "^4.1.0",
+    "mongoose": "^5.1.6",
     "mysql": "^2.15.0",
+    "pg": "^7.4.3",
     "prop-types": "^15.6.1",
     "rc-slider": "^8.6.1",
     "react": "^16.4.0",
@@ -41,11 +41,11 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb": "^17.0.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react": "^7.9.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",

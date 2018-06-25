@@ -49,8 +49,8 @@ class App extends React.Component {
   // =======WILL UNCOMMENT BELOW LATER---USING MOCK DATA DURING DEVELOPMENT======
 
   componentDidMount() {
-    this.fetch('/filterListings/getImages', 'allImages');
-    this.fetch('/filterListings/getRooms', 'allRooms')
+    this.fetch(`/getImages${window.location.pathname}`, 'allImages');
+    this.fetch(`/getRooms${window.location.pathname}`, 'allRooms')
       .then((data) => { this.setDisplayedRooms(data); });
   }
 
@@ -62,7 +62,7 @@ class App extends React.Component {
   }
 
   setDisplayedRooms(rooms) {
-    this.setState({ displayedRooms: rooms.slice(0, 25) });
+    this.setState({ displayedRooms: rooms.slice(0, 50) });
   }
 
   fetch(endpoint, key) {
