@@ -1,0 +1,17 @@
+config:
+  target: 'http://localhost:3004'
+  phases:
+    - duration: 60
+      arrivalRate: 2
+scenarios:
+  - flow:
+    - loop:
+      - get:
+          url: '/{{ $randomNumber(9000000,9990000) }}'
+          count: 1
+      - get:
+          url: '/getImages/{{ $randomNumber(9000000,9990000) }}'
+          count: 1
+      - get:
+          url: '/getRooms/{{ $randomNumber(9000000,9990000) }}'
+          count: 1

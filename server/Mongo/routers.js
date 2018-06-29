@@ -3,8 +3,6 @@ const db = require('../../database/MongoDB/index');
 
 const router = express.Router();
 
-router.get('/favicon.ico', (req, res) => res.status(204));
-
 router.get('/getRooms/:id', (req, res) => {
   const { id } = req.params;
   const min = Number(id) + 1;

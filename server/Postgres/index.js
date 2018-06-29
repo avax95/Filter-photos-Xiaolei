@@ -1,4 +1,4 @@
-const nr = require('newrelic');
+require('newrelic');
 const path = require('path');
 const cors = require('cors');
 const cluster = require('cluster');
