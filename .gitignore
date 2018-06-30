@@ -30,4 +30,5 @@ build/
 dist/
 /database/Postgres/config.js
 testPhotos/
-/newrelic.js
+newrelic.js
+.nyc_output/
