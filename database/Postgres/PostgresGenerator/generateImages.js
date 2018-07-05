@@ -8,8 +8,8 @@ const mock = () => {
   let url;
   let process = 0;
   let imgStorage = [];
-  for (let i = 1; i <= 10000000; i++) {
-    for (let k = 1; k < 7; k++) {
+  for (let i = 1; i <= 5000000; i++) {
+    for (let k = 1; k < 5; k++) {
       number = faker.random.number({ min: 0, max: 5 });
       url = photos[number];
       const images = `${url},${i}`;

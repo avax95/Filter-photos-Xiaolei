@@ -3,7 +3,7 @@ const express = require('express');
 const db = require('../../database/Postgres/index');
 
 const router = express.Router();
-const client = redis.createClient('6379', 'localhost');
+const client = redis.createClient('6379', '172.17.0.2');
 
 client.on('connect', () => {
   console.log('redis connected');

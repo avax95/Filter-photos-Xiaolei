@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack -d --watch",
-    "start": "node server/index.js"
+    "start": "node server/Postgres/index.js",
+    "redis": "redis-server"
   },
   "repository": {
     "type": "git",
