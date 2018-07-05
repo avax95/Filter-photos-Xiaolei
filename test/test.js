@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 const { expect } = require('chai');
 const request = require('request');
-// const server = require('../server/Postgres/index');
+const server = require('../server/Postgres/index');
 
 describe('server-test', () => {
   describe('routers', () => {
@@ -78,5 +78,25 @@ describe('server-test', () => {
         }
       });
     });
+
+    // it('should insert data into database with post query', (done) => {
+    //   const queryInserting = `insert into images ("urlToImage") values ('http://checkingLink')`;
+    //   const querySelecting = `select * from images where "urlToImage" = 'http://checkingLink';`;
+    //   client.query(queryInserting, (err, results) => {
+    //     if (err) throw err;
+
+    //     if (results !== null) {
+    //       client.query(querySelecting, (err, results) => {
+    //         if (err) throw err;
+
+    //         if (results !== null) {
+    //           expect(results.rows[0].urlToImage).to.equal('checkingLink');
+    //           done();
+    //         }
+    //       })
+    //     }
+    //   })
+    // })
+
   });
 });

@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const roomTypes = ['Entire House', 'Entire Apartment', 'Entire Guest Suite', 'Entire Guest House', 'Private Room', 'Shared Room'];
 const trueFalse = ['T', 'F'];
-const total = 10000000;
+const total = 5000000;
 
 let roomname;
 let price;
