@@ -1,45 +1,33 @@
-# Project Name
+# NapBnB (System scale)
 
-> Project description
+> Design microservices system architecture to scale
 
-## Related Projects
+## Stress Testing Result
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+![alt text](https://i.imgur.com/GtrLVRf.png)
 
-## Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+![alt text](https://i.imgur.com/CT2Jly1.png)
 
 ## Usage
 
-> Run the below in terminal order to add table to database
-mysql.server start
-mysql -u root < schema.sql
+- Optimize latency from 33000 ms to 2 ms on PostgreSQL for over 60 million rows using indexing 
 
-> Run the below in terminal in order to add mock data to database
-node generateMockData.js
+- Deployed 3 Node/Express servers with Docker and scaled them with AWS load balancer to handle 1200 RPS
+
+- Reduced server response time by 68% with lower frequency of database retrieval by Redis caching
+
+- Achieved over 75% test coverage using Mocha/Chai for smoother project updates, adhering to test-driven development
 
 
-## Requirements
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
+## Built With
 
-- Node 6.13.0
-- etc
+React 
 
-## Development
+Node.js 
 
-### Installing Dependencies
+PostgreSQL
 
-From within the root directory:
+Docker
 
-```sh
-npm install -g webpack
-npm install
-```
-
+AWS (EC2)
